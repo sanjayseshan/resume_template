@@ -1,0 +1,115 @@
+\documentclass{template}
+\usepackage{blindtext}
+\usepackage{multicol}
+\usepackage{fontawesome}
+% \usepackage{fontspec}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,      
+    urlcolor=black,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+\usepackage{lastpage}
+\usepackage{graphicx,calc}
+\usepackage{url}
+\usepackage{array}
+
+\usepackage{enumerate}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{sectsty}
+\usepackage{tabularx} % in the preamble
+\usepackage{titlesec}
+% \sectionfont{\normalfont\Large\bfseries\hrule}
+
+% \usepackage[document]{ragged2e}
+
+\titleformat{\section}
+  {\normalfont\Large\bfseries}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
+
+\usepackage[left=0.5in,top=0.70in,right=0.5in,bottom=0.70in]{geometry} % Document margins
+
+
+\definecolor{link}{RGB}{28,74,238} 
+
+
+
+
+\renewcommand{\nameskip}{\smallskip}
+\name{\huge YOUR NAME\\ } % Your name
+\address{\href{mailto:EMAIL@mit.edu}{\faEnvelopeO \, EMAIL@mit.edu}  \\ \href{http://www.mit.edu/~kerb}{\faHome \, http://www.mit.edu/$\sim$kerb} \\ \href{https://www.github.com/USERNAME}{\faGithub \, USERNAME}  \\ 
+\href{https://www.linkedin.com/in/USERNAME/} {\faLinkedin \, USERNAME}  \\ \faMapMarker \, Cambridge, MA, US}% Your address
+
+
+% Define an environment for cvitems(for cventry)
+
+
+\begin{document} 
+
+\section*{Education}
+
+\job{Massachusetts Institute of Technology (MIT)}{Cambridge, MA}{Bachelor of Science}{Sep. 2021 - May 2025}{GPA: XXXX/5.00, Course XX MAJOR}
+
+\job{High School}{LOCATION}{High School Diploma}{Aug. 2017 - Jun. 2021}{GPA: XXXX/4.00,XXXXX}
+
+\section*{Work and Research}
+
+\job{COMPANY}{CITY, REGION, COUNTRY}{POSITION}{MM. YYYY - MM. YYYY}{DESCRIPTION}
+
+\job{COMPANY}{CITY, REGION, COUNTRY}{POSITION}{MM. YYYY - MM. YYYY}{DESCRIPTION}
+
+\job{COMPANY}{CITY, REGION, COUNTRY}{POSITION}{MM. YYYY - MM. YYYY}{DESCRIPTION}
+
+
+\section*{Relevant Coursework}
+
+
+\begin{tabular}{ p{0.48 \textwidth} p{0.48\textwidth}  }
+    \raggedright
+    \begin{itemize}
+    \item{COURSE NAME} \textit{1.234}
+    \item{COURSE NAME} \textit{1.234}
+
+   \end{itemize}
+    & 
+    \raggedright
+
+    \begin{itemize}
+    \item{COURSE NAME} \textit{1.234}
+    \item{COURSE NAME} \textit{1.234}
+
+   
+   \end{itemize}  
+   \end{tabular}
+
+    % \newpage
+
+   \section*{Significant Projects}
+     
+   \begin{itemize}
+   \item PROJECT 1
+   \item PROJECT 2
+
+   \end{itemize}
+
+
+\section*{Technical Skills}
+\begin{itemize}
+\item {\textrm{\LaTeX}, XXXX} %
+\end{itemize}
+    
+\section*{Activities}
+
+\begin{itemize}
+    \item \textbf{TITLE}: {DESCRIPTION}
+    \item \textbf{TITLE}: {DESCRIPTION}
+    \item \textbf{TITLE}: {DESCRIPTION}
+    \end{itemize}
+
+\end{document}
